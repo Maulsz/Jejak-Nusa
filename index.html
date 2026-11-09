@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JejakNusa</title>
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/logo.svg
+    "
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="" class="logo">
+          <img src="./assets/logo.svg" alt="" />
+          <span>JejakNusa</span></a
+        >
+
+        <div class="nav-menu">
+          <a href="#beranda">Beranda</a>
+          <a href="#eksplorasi">Eksplorasi</a>
+          <!-- <a href="#tentang">Tentang</a> -->
+          <a href="#destinations">Destinasi</a>
+        </div>
+
+        <a href="#eksplorasi" class="nav-cta">Mulai Jelajahi </a>
+
+        <button class="hamburger" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-content">
+          <span class="hero-eyebrow"> DISCOVER THE CULTURE OF INDONESIA </span>
+
+          <h1>
+            More Than Places,
+            <span>It's Stories.</span>
+          </h1>
+
+          <p>
+            Kenali kekayaan budaya Nusantara melalui perjalanan, tradisi, dan
+            cerita yang diwariskan dari generasi ke generasi.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#eksplorasi" class="hero-cta">
+              Mulai Menjelajah
+              <span>↗</span>
+            </a>
+
+            <span class="hero-note"> Explore the beauty of Indonesia </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            src="./assets/heroimages2.jpg"
+            alt="Rumah adat Tongkonan di Tana Toraja"
+            class="hero-slide is-active"
+            id="hero-image-a"
+          />
+
+          <img
+            src="./assets/images/rumah-gadang.webp"
+            alt=""
+            class="hero-slide"
+            id="hero-image-b"
+          />
+
+          <div class="hero-image-label">
+            <span id="hero-region">01 / SULAWESI SELATAN</span>
+            <p id="hero-location">Tana Toraja, Indonesia</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLORE SECTION -->
+      <section class="explore" id="eksplorasi">
+        <div class="explore-heading">
+          <div class="explore-intro">
+            <span class="section-eyebrow"> EXPLORE THE HERITAGE </span>
+
+            <h2>
+              Discover Indonesia's
+              <span>Rich Culture.</span>
+            </h2>
+
+            <p>
+              Setiap sudut Nusantara menyimpan cerita, tradisi, dan warisan yang
+              menarik untuk dijelajahi.
+            </p>
+          </div>
+
+          <div class="explore-controls">
+            <button
+              class="scroll-btn"
+              id="scroll-prev"
+              aria-label="Geser ke kiri"
+            >
+              ←
+            </button>
+
+            <button
+              class="scroll-btn"
+              id="scroll-next"
+              aria-label="Geser ke kanan"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <div class="category-track" id="category-track">
+          <!-- Render dari data.js -->
+        </div>
+      </section>
+
+      <section class="destinations-section" id="destinations">
+        <div class="section-heading">
+          <div>
+            <span class="section-eyebrow">JELAJAHI NUSANTARA</span>
+            <h2>Destinasi Pilihan</h2>
+          </div>
+
+          <p>
+            Temukan tempat-tempat istimewa yang menyimpan cerita dan warisan
+            budaya Indonesia.
+          </p>
+        </div>
+
+        <div class="destinations-grid">
+          <!-- Kartu destinasi akan kita buat di sini -->
+        </div>
+      </section>
+
+      <dialog class="destination-modal" id="destination-modal">
+        <button class="destination-modal-close" id="destination-modal-close">
+          &times;
+        </button>
+
+        <img src="" alt="" id="destination-modal-image" />
+
+        <div class="destination-modal-content">
+          <span id="destination-modal-location"></span>
+          <h2 id="destination-modal-title"></h2>
+          <p id="destination-modal-description"></p>
+          <div class="destination-detail-section">
+            <h3>Sejarah</h3>
+            <p id="destination-modal-history"></p>
+          </div>
+
+          <div class="destination-detail-section">
+            <h3>Keunikan</h3>
+            <p id="destination-modal-uniqueness"></p>
+          </div>
+
+          <div class="destination-detail-section">
+            <h3>Nilai Budaya</h3>
+            <p id="destination-modal-culture"></p>
+          </div>
+        </div>
+      </dialog>
+
+      <footer class="footer" id="footer">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h2>Jejak<span>Nusa.</span></h2>
+            <p>
+              Menjelajahi keindahan Indonesia, mengenal budaya, dan menjaga
+              cerita warisan Nusantara.
+            </p>
+          </div>
+
+          <div class="footer-navigation">
+            <h3>Navigasi</h3>
+            <a href="#beranda">Beranda</a>
+            <a href="#eksplorasi">Eksplorasi</a>
+            <a href="#destinations">Destinasi</a>
+          </div>
+
+          <div class="footer-information">
+            <h3>Tentang JejakNusa</h3>
+            <p>
+              Sebuah proyek eksplorasi budaya Indonesia yang dibuat untuk
+              mengenal kekayaan Nusantara.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 JejakNusa. Dibuat dengan penuh rasa ingin tahu.</p>
+          <a href="#beranda">Kembali ke atas ↑</a>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Category Detail Modal -->
+    <dialog class="category-modal" autofocus id="category-modal" tabindex="-1">
+      <!-- <dialog>	Elemen HTML khusus untuk membuat dialog/modal. -->
+      <div class="modal-container">
+        <!-- Tombol Close -->
+        <button
+          type="button"
+          class="modal-close"
+          id="modal-close"
+          aria-label="Tutup modal"
+        >
+          &times;
+        </button>
+
+        <!-- Gambar Kategori -->
+        <div class="modal-visual">
+          <img src="" alt="" id="modal-image" />
+
+          <span class="modal-image-label" id="modal-number">
+            01 / CATEGORY
+          </span>
+        </div>
+
+        <!-- Konten Modal -->
+        <div class="modal-content">
+          <!-- CATEGORY VIEW -->
+          <div class="category-view" id="category-view">
+            <div class="modal-heading">
+              <span class="modal-eyebrow" id="modal-label">
+                CATEGORY LABEL
+              </span>
+
+              <h2 id="modal-title">Category Title</h2>
+
+              <p id="modal-description">
+                Category description will appear here.
+              </p>
+            </div>
+
+            <!-- Daftar Tempat -->
+            <div class="modal-places">
+              <div class="places-heading">
+                <div>
+                  <span class="modal-eyebrow">DISCOVER MORE</span>
+                  <h3>Tempat untuk Dijelajahi</h3>
+                </div>
+
+                <span class="places-count" id="places-count"> 0 PLACES </span>
+              </div>
+
+              <div class="places-list" id="places-list">
+                <!-- Daftar tempat akan dirender menggunakan JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <!-- PLACE DETAIL VIEW -->
+          <div class="place-view" id="place-view" hidden>
+            <button type="button" class="back-button" id="back-to-category">
+              ← Kembali ke kategori
+            </button>
+
+            <div class="place-detail">
+              <span class="modal-eyebrow" id="detail-location"> LOCATION </span>
+
+              <h2 id="detail-title">Place Title</h2>
+
+              <p id="detail-description">Place description will appear here.</p>
+
+              <div class="detail-information">
+                <div>
+                  <span>ASAL</span>
+                  <p id="detail-origin"></p>
+                </div>
+
+                <div>
+                  <span>KEUNIKAN</span>
+                  <p id="detail-uniqueness"></p>
+                </div>
+
+                <div>
+                  <span>NILAI BUDAYA</span>
+                  <p id="detail-cultural-value"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
